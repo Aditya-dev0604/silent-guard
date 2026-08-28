@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SilentGuardian Posters</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <a id="back" href="/action">&lt;-- Back</a>
+
+    <h1>Social Media Posters</h1>
+
+    <p>Share these posters to spread awareness about SilentGuardian.</p>
+
+    <div class="posters">
+
+    <img src="{{ url_for('static', filename='poster1.jpg') }}">
+    <img src="{{ url_for('static', filename='poster.png') }}">
+    <img src="{{ url_for('static', filename='poster_ap.png') }}">
+
+    </div>
+
+</body>
+</html>

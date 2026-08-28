@@ -1,0 +1,82 @@
+/* Main game page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1d2340;
+    color: white;
+    text-align: center;
+}
+
+/* Game title */
+h1 {
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+/* Situation box */
+#situation {
+    font-size: 22px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    background: #30385f;
+    border-radius: 15px;
+}
+
+/* Elder character */
+#elder {
+    font-size: 100px;
+    margin: 20px;
+}
+
+/* Message shown after an action */
+#message {
+    font-size: 22px;
+    min-height: 35px;
+    margin: 20px;
+}
+
+/* All buttons */
+button {
+    font-size: 18px;
+    padding: 14px 22px;
+    margin: 8px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #6c63ff;
+    color: white;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Alarm button */
+#alarm {
+    background: #d93636;
+}
+
+/* Notify button */
+#notify {
+    background: #2878d7;
+}
+
+/* Continue button */
+#continue {
+    background: #2e9e5b;
+}
+
+/* Next situation button */
+#next {
+    background: #8b5cf6;
+    font-size: 20px;
+    padding: 15px 35px;
+}
+
+/* Score */
+#score {
+    font-size: 26px;
+    margin-top: 30px;
+}

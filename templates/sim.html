@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SilentGuardian Simulator</title>
+
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='sim_ui.css') }}">
+</head>
+
+<body>
+
+    <h1>SilentGuardian Simulator</h1>
+
+    <p id="situation"></p>
+
+    <div id="elder">🧓</div>
+
+    <p id="message">What would you do?</p>
+
+    <button id="voice1">VOICE CHECK 1</button>
+    <button id="voice2">VOICE CHECK 2</button>
+    <button id="alarm">ALARM</button>
+    <button id="notify">NOTIFY</button>
+    <button id="continue">CONTINUE</button>
+    <button id="next">NEXT SITUATION</button>
+
+    <h2 id="score">Score: 0</h2>
+
+    <script src="{{ url_for('static', filename='sim.js') }}"></script>
+    
+     <a id="back" href="/action">&lt;-- Back</a>
+
+</body>
+
+</html>

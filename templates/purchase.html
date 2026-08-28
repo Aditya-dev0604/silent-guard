@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Purchase | SilentGuardian</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+
+<body>
+
+    <a id="back" href="/">&lt;-- Back</a>
+
+
+    <section class="purchase-page">
+
+        <h1>SilentGuardian Products</h1>
+
+        <p class="purchase-intro">
+            Intelligent protection for the people who matter most.
+        </p>
+
+
+        <div class="models-grid">
+
+
+            <!-- SILENTGUARDIAN V1 -->
+
+            <div class="model-card">
+
+                <span class="product-status out-of-stock">
+                    OUT OF STOCK
+                </span>
+
+                <div class="product-image">
+
+                    <img src="{{ url_for('static', filename='product_v1.png') }}"
+                         alt="SilentGuardian V1">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h2>SilentGuardian V1</h2>
+
+                    <p>
+                        An AI-based elderly safety monitoring system
+                        designed to notice situations where someone
+                        may silently need help.
+                    </p>
+
+                    <h3>Key Features</h3>
+
+                    <ul>
+                        <li>AI-based posture monitoring</li>
+                        <li>Suspicious posture detection</li>
+                        <li>Motionless observation</li>
+                        <li>Voice wellness check</li>
+                        <li>Local alarm system</li>
+                        <li>No wearable devices required</li>
+                    </ul>
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+                            ₹ XX,XXX
+                        </div>
+
+                        <span class="purchase-button disabled">
+                            Currently Unavailable
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SILENTGUARDIAN NEXTGEN -->
+
+            <div class="model-card featured">
+
+                <span class="product-status out-of-stock">
+                    OUT OF STOCK
+                </span>
+
+                <div class="product-image">
+
+                    <img src="{{ url_for('static', filename='product_nextgen.png') }}"
+                         alt="SilentGuardian NextGen">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h2>SilentGuardian NextGen</h2>
+
+                    <p>
+                        An upcoming advanced version of SilentGuardian
+                        with improved hardware and additional safety features.
+                    </p>
+
+                    <h3>Additional Features</h3>
+
+                    <ul>
+                        <li>Sleep and seizure differentiation</li>
+                        <li>Physical SOS button</li>
+                        <li>Improved microphone</li>
+                        <li>Improved speaker</li>
+                        <li>Enhanced physical design</li>
+                        <li>Advanced monitoring capabilities</li>
+                    </ul>
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+                            Coming Soon
+                        </div>
+
+                        <span class="purchase-button disabled">
+                            Currently Unavailable
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="purchase-note">
+
+            <h2>Built with Privacy in Mind</h2>
+
+            <p>
+                SilentGuardian is designed to assist without
+                unnecessarily interfering with everyday life.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

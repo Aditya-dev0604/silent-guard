@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Reviews | SilentGuardian</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+
+    <a id="back" href="/">&lt;-- Back</a>
+
+    <h1>SilentGuardian Reviews</h1>
+
+    <p class="reviews-intro">
+        Hear what people think about SilentGuardian.
+    </p>
+
+
+    <!-- Review submission form -->
+    <div class="review-form">
+
+        <h2>Leave a Review</h2>
+
+        <form method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+            >
+
+            <div class="rating-input">
+
+    <label>How would you rate SilentGuardian?</label>
+
+    <div class="star-rating">
+
+    <div class="rating-input">
+    <p>Rate SilentGuardian from 1 to 5:</p>
+
+    <input type="radio" name="rating" value="1" required> 1
+    <input type="radio" name="rating" value="2"> 2
+    <input type="radio" name="rating" value="3"> 3
+    <input type="radio" name="rating" value="4"> 4
+    <input type="radio" name="rating" value="5"> 5
+
+    </div>
+
+    </div>
+
+            <textarea
+                name="review"
+                placeholder="Write your review..."
+                required
+            ></textarea>
+
+            <button type="submit">Submit Review</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Reviews from the database -->
+    <div class="reviews-container">
+
+        {% for review in reviews %}
+
+        <div class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "{{ review['review'] }}"
+            </p>
+
+            <h3>
+                — {{ review['name'] }}
+            </h3>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+
+</body>
+
+</html>
